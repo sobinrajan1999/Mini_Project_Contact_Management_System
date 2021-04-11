@@ -1,4 +1,4 @@
-# SDLC Activity Based Learning
+# Contact Management System
 
 Visit [Pages for Report -optional](using github.io option)
 
@@ -19,15 +19,12 @@ Folder             | Description
 
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
+`258213` | Sobin Rajan  | Feature A, B etc    | X No     | X No   |X No   |X No          
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ...
+1. Want to store my data in csv format. Geeks for Geeks helps me in the situation.
+2. Don't know how to edit files. Sanfoundry and Stackoverflow helps me to find the solution.
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
