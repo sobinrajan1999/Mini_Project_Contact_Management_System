@@ -13,5 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make 3_Implementation/ staticcheck
+    - name: cpp Check
+      run: staticcheck 3_Implementation/
