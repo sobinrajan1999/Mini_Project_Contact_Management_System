@@ -16,4 +16,4 @@ jobs:
     - name: install cppcheck
       run: sudo apt install cppcheck
     - name: cpp Check
-      run: staticcheck 3_Implementation/
+      run: make 3_Implementation/ staticcheck
