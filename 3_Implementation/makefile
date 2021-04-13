@@ -29,7 +29,7 @@ run:
 analyze: memcheck staticcheck codesize
 
 staticcheck:
-	cppcheck --enable=all .
+	cppcheck --enable=all $(SRC) main.c
 
 memcheck:
 	valgrind ./$(PROJ_NAME)
