@@ -26,9 +26,9 @@ run_test:
 run: 
 	./main.out
 
-analyze: memcheck staticcheck codesize
+analyze: memcheck cppcheck codesize
 
-staticcheck:
+cppcheck:
 	cppcheck --enable=all $(SRC) main.c
 
 memcheck:
