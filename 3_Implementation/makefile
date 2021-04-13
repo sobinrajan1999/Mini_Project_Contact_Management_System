@@ -26,18 +26,26 @@ run_test:
 run: 
 	./main.out
 
-analyze: memcheck cppcheck codesize
+analyze: memcheck staticcheck codesize
 
 cppcheck:
-	cppcheck --enable=all $(SRC) main.c
+	cppcheck --enable=all .
 
-memcheck:
-	valgrind ./$(PROJ_NAME)
+valgrind:
+	valgrind ./test.out
+
+# coverage:
+# 	gcc -fprofile-arcs -ftest-coverage -I $(INC) -I $(UNITY) $(TEST) $(SRC)  -o test.out
+# 	./test.out
+# 	gcov -a gcov -a src/add_contact.c src/search_result.c src/edit_delete_contact.c src/search_contact.c
 
 codesize:$(PROJ_NAME)
 	size $^
 
 clean:
-	rm -rf $(PROJ_NAME) test.out
+	rm -rf $(PROJ_NAME) *.gcov *.gcda *.gcno
+
+
+
 
 
