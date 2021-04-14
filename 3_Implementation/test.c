@@ -6,10 +6,10 @@ void setUp(){}
 
 void tearDown(){}
 
-// void test_addcontact(void){
-//     //TEST_ASSERT_EQUAL(1,add_contact("Sobin","7814174948","ludhiana","sobin@gmail.com"));
-//     //TEST_ASSERT_EQUAL(0,add_contact("Sobin","7814174948","ludhiana",NULL));
-// }
+void test_addcontact(void){
+    TEST_ASSERT_EQUAL(1,add_contact("Sobin","7814174948","ludhiana","sobin@gmail.com"));
+    TEST_ASSERT_EQUAL(0,add_contact("Sobin","7814174948","ludhiana",NULL));
+}
 
 void test_edit_delete_contact(void){
     TEST_ASSERT_EQUAL(1,edit_delete_contact("sobin"));
@@ -34,7 +34,7 @@ void test_compare_name(void){
 int main(void){
     UNITY_BEGIN();
 
-//     RUN_TEST(test_addcontact);
+    RUN_TEST(test_addcontact);
     RUN_TEST(test_edit_delete_contact);
     RUN_TEST(test_search_contact);
     RUN_TEST(test_search_result);
