@@ -1,8 +1,8 @@
 # Architecture
 
 ## Flowchart
-![flowchart contact management system](flowchart.png)
+![flowchart contact management system](Flowchart.png)
 
 ## Use Case Diagram
-![Use case Diagram](use%20case%20diagram.png)
+![Use case Diagram](usecase.png)
 
