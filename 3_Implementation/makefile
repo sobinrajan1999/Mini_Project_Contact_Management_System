@@ -34,10 +34,10 @@ cppcheck:
 valgrind:
 	valgrind ./test.out
 
-# coverage:
-# 	gcc -fprofile-arcs -ftest-coverage -I $(INC) -I $(UNITY) $(TEST) $(SRC)  -o test.out
-# 	./test.out
-# 	gcov -a gcov -a src/add_contact.c src/search_result.c src/edit_delete_contact.c src/search_contact.c
+coverage:
+	gcc -fprofile-arcs -ftest-coverage -I $(INC) -I $(UNITY) $(TEST) $(SRC)  -o test.out
+	./test.out
+	gcov -a test.out
 
 codesize:$(PROJ_NAME)
 	size $^
