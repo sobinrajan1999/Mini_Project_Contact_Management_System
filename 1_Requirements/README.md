@@ -36,7 +36,7 @@ Contact Management System has features such as:
 5. Delete contact
     
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![SWOT-Analysis](swot.png)
 
 # 4W&#39;s and 1&#39;H
 
