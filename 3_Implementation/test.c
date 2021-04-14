@@ -11,16 +11,6 @@ void test_addcontact(void){
 //     TEST_ASSERT_EQUAL(0,add_contact("Sobin","7814174948","ludhiana",NULL));
 }
 
-void test_edit_delete_contact(void){
-    TEST_ASSERT_EQUAL(1,edit_delete_contact("sobin"));
-    TEST_ASSERT_EQUAL(0,edit_delete_contact("ravi"));
-}
-
-void test_search_contact(void){
-    TEST_ASSERT_EQUAL(1,search_contact("annamma"));
-    TEST_ASSERT_EQUAL(0,search_contact("Zakir"));
-}
-
 void test_search_result(){
     TEST_ASSERT_EQUAL(1,search_result("annamma"));
     TEST_ASSERT_EQUAL(0,search_result("Vishwas"));
@@ -35,8 +25,6 @@ int main(void){
     UNITY_BEGIN();
 
     RUN_TEST(test_addcontact);
-    RUN_TEST(test_edit_delete_contact);
-    RUN_TEST(test_search_contact);
     RUN_TEST(test_search_result);
     RUN_TEST(test_compare_name);
 
