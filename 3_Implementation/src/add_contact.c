@@ -14,9 +14,9 @@
 error_t add_contact(char name[], char phone[], char location[], char email[]){
     FILE *fptr;
         fptr=fopen("csv_file/data.csv","a");
-        if(name==NULL || phone==NULL || location==NULL, email==NULL){            //return FAIL if any varibale contain NULL value
-            return FAIL;
-        }
+//         if(name==NULL || phone==NULL || location==NULL, email==NULL){            //return FAIL if any varibale contain NULL value
+//             return FAIL;
+//         }
         fprintf(fptr,"%s,%s,%s,%s\n",name,phone,location,email);      //add the details to file
         fclose(fptr);
         return SUCCESS;                           //return SUCCESS if everything works fine
