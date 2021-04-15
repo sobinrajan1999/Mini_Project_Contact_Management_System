@@ -1,3 +1,5 @@
+PROJ_NAME = main
+
 SRC = src/add_contact.c\
 src/print_list.c\
 src/list_all_contact.c\
@@ -5,47 +7,52 @@ src/search_result.c\
 src/edit_delete_contact.c\
 src/search_contact.c
 
-PROJ_NAME = main.out
-
-INC = inc
-
-UNITY = unity
-
 TEST = test.c\
 unity/unity.c
 
-$(PROJ_NAME) : $(SRC)
-	gcc -I $(INC) $(SRC) main.c -o $(PROJ_NAME)
+BUILD_DIR = Build
 
-test: $(SRC)
-	gcc -I $(INC) -I $(UNITY) $(SRC) $(TEST) -o test.out
+INC = -Iinc\
+-Iunity
 
-run_test:
-	./test.out
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 
-run: 
-	./main.out
+# Makefile will not run target command if the name with file already exists. To override, use .PHONY
+.PHONY : all test coverage run clean doc
 
-analyze: memcheck staticcheck codesize
+all:$(BUILD_DIR)
+	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+run: all
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+
+test: $(SRC) $(TEST)
+	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/test.$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/test.$(EXEC))
+
+coverage:
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(TEST) $(INC) -o $(call FixPath,$(BUILD_DIR)/test.$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/test.$(EXEC))
+	gcov -a test.c
 
 cppcheck:
-	cppcheck --enable=all .
+	cppcheck --enable=all $(SRC) main.c
 
 valgrind:
 	valgrind ./test.out
 
-coverage:
-	gcc -fprofile-arcs -ftest-coverage -I $(INC) -I $(UNITY) $(TEST) $(SRC)  -o test.out
-	./test.out
-	gcov -a test.out
-
-codesize:$(PROJ_NAME)
-	size $^
 
 clean:
-	rm -rf $(PROJ_NAME) *.gcov *.gcda *.gcno
-
-
-
-
-
+	$(RM) $(call FixPath,$(BUILD_DIR)/*)
+	make clean -C doc
+	rmdir $(BUILD_DIR) doc/html
