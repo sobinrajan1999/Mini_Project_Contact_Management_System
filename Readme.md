@@ -4,7 +4,7 @@
 
 
 Build | Code Quality | code Quality | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
+------|----------|-----------|-------|--------------
 [![C/C++ CI Build Status](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp.yml) | [![C/C++ CI Static Code Analysis](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp_static_code_analysis.yml/badge.svg)](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp_static_code_analysis.yml) |[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2c40be85fb244339b32a2165b450380d)](https://www.codacy.com/gh/sobinrajan1999/Mini_Project_Contact_Management_System/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sobinrajan1999/Mini_Project_Contact_Management_System&amp;utm_campaign=Badge_Grade) | [![C/C++ CI Unit Testing](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp%20Unity.yml/badge.svg)](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp%20Unity.yml)| [![C/C++ - Git Inspector](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp_git_inspector.yml/badge.svg)](https://github.com/sobinrajan1999/Mini_Project_Contact_Management_System/actions/workflows/c-cpp_git_inspector.yml)
 
 
