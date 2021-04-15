@@ -8,7 +8,7 @@ void tearDown(){}
 
 void test_addcontact(void){
     TEST_ASSERT_EQUAL(1,add_contact("Sobin","7814174948","ludhiana","sobin@gmail.com"));
-    TEST_ASSERT_EQUAL(0,add_contact("Sobin","8874598234","ludhiana"," ");
+    TEST_ASSERT_EQUAL(0,add_contact("Sobin","8874598234","ludhiana"," "));
 }
                     
 void test_search_contact(void){
