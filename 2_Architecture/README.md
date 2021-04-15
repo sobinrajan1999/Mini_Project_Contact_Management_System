@@ -10,4 +10,4 @@
 ![Use case Diagram](usecase_diagram.png)
 
 ## 4. State Machine Diagram
-![state machine diagram](state_machine_diagram.png)
+![state machine diagram](State_machine_diagram.png)
