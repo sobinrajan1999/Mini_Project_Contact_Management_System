@@ -7,5 +7,5 @@
 ![architural](architectural_diagram.png)
 
 ## Use Case Diagram
-![Use case Diagram](usecase.png)
+![Use case Diagram](usecase_diagram.png)
 
