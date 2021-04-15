@@ -1,11 +1,13 @@
 # Architecture
 
-## Flowchart
+## 1. Flowchart
 ![flowchart contact management system](Flowchart.png)
 
-## Architectural Diagram
+## 2. Architectural Diagram
 ![architural](architectural_diagram.png)
 
-## Use Case Diagram
+## 3. Use Case Diagram
 ![Use case Diagram](usecase_diagram.png)
 
+## 4. State Machine Diagram
+![state machine diagram](state_machine_diagram.png)
