@@ -20,7 +20,7 @@ Folder             | Description
 
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`258213` | Sobin Rajan  | Feature A, B etc    | X No     | X No   |X No   |X No          
+`258213` | Sobin Rajan  | Feature A, B etc    | 0     | 0   |6   |6         
 
 ## Challenges Faced and How Was It Overcome
 
